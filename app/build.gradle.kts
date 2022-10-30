@@ -78,6 +78,7 @@ dependencies {
 
     // Module
     implementation(project(Module.Core))
+    implementation(project(Module.CoreUi))
     implementation(project(Module.OnboardingDomain))
     implementation(project(Module.OnboardingPresentation))
     implementation(project(Module.TrackerData))
