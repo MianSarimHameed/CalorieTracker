@@ -75,4 +75,12 @@ dependencies {
     // Testing
     testImplementation(JUnit.junit4)
     androidTestImplementation(JUnit.ext)
+
+    // Module
+    implementation(project(Module.Core))
+    implementation(project(Module.OnboardingDomain))
+    implementation(project(Module.OnboardingPresentation))
+    implementation(project(Module.TrackerData))
+    implementation(project(Module.TrackerDomain))
+    implementation(project(Module.TrackerPresentation))
 }
