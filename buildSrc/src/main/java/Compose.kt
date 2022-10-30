@@ -21,4 +21,8 @@ object Compose {
     // ViewModel
     private const val lifecycleViewModelComposeVersion = "2.5.1"
     const val lifecycleViewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleViewModelComposeVersion"
+
+    // Navigation
+    private const val navigationComposeVersion = "2.5.3"
+    const val navigationCompose = "androidx.navigation:navigation-compose:$navigationComposeVersion"
 }

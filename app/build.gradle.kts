@@ -59,6 +59,7 @@ dependencies {
     implementation(Compose.material)
     implementation(Compose.activityCompose)
     implementation(Compose.lifecycleViewModelCompose)
+    implementation(Compose.navigationCompose)
 
     implementation(Compose.uiToolingPreview)
     debugImplementation(Compose.uiTooling)
