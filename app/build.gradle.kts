@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -72,6 +74,10 @@ dependencies {
 
     //Lifecycle
     implementation(Lifecycle.runtime)
+
+    // Hilt
+    implementation(Hilt.android)
+    kapt(Hilt.compiler)
 
     // Testing
     testImplementation(JUnit.junit4)
