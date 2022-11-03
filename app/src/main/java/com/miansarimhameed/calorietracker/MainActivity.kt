@@ -17,6 +17,7 @@ import com.miansarimhameed.core.navigation.Route
 import com.miansarimhameed.onboarding_presentation.activity.ActivityScreen
 import com.miansarimhameed.onboarding_presentation.age.AgeScreen
 import com.miansarimhameed.onboarding_presentation.gender.GenderScreen
+import com.miansarimhameed.onboarding_presentation.goal.GoalScreen
 import com.miansarimhameed.onboarding_presentation.height.HeightScreen
 import com.miansarimhameed.onboarding_presentation.weight.WeightScreen
 import com.miansarimhameed.onboarding_presentation.welcome.WelcomeScreen
@@ -70,7 +71,7 @@ class MainActivity : ComponentActivity() {
                             ActivityScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.GOAL) {
-
+                            GoalScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.TRACKER_OVERVIEW) {
 
