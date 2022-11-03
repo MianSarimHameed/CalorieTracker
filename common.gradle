@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdk ProjectConfig.compileSdk
@@ -39,6 +40,10 @@ android {
 }
 
 dependencies {
+    // Hilt
+    implementation Hilt.android
+    kapt Hilt.compiler
+
     // Testing
     testImplementation JUnit.junit4
     androidTestImplementation JUnit.ext

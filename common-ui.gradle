@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdk ProjectConfig.compileSdk
@@ -54,12 +55,17 @@ dependencies {
     implementation Compose.material
     implementation Compose.activityCompose
     implementation Compose.lifecycleViewModelCompose
+    implementation Compose.hiltNavigationCompose
 
     implementation Compose.uiToolingPreview
     debugImplementation Compose.uiTooling
 
     androidTestImplementation Compose.uiTestJunit
     debugImplementation Compose.uiTestManifest
+
+    // Hilt
+    implementation Hilt.android
+    kapt Hilt.compiler
 
     //Core
     implementation Core.ktx
