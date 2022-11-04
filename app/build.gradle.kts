@@ -80,6 +80,12 @@ dependencies {
     implementation(Hilt.android)
     kapt(Hilt.compiler)
 
+    // Retrofit
+    implementation(Retrofit.okHttp)
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.okHttpLoggingInterceptor)
+    implementation(Retrofit.moshiConverter)
+
     // Testing
     testImplementation(JUnit.junit4)
     androidTestImplementation(JUnit.ext)
