@@ -12,4 +12,10 @@ dependencies {
     "implementation"(Retrofit.retrofit)
     "implementation"(Retrofit.okHttpLoggingInterceptor)
     "implementation"(Retrofit.moshiConverter)
+
+    // Room
+    "implementation"(Room.runtime)
+    "implementation"(Room.ktx)
+    "kapt"(Room.compiler)
+    "androidTestImplementation"(Room.testing)
 }

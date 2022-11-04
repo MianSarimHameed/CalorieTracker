@@ -86,6 +86,12 @@ dependencies {
     implementation(Retrofit.okHttpLoggingInterceptor)
     implementation(Retrofit.moshiConverter)
 
+    // Room
+    implementation(Room.runtime)
+    implementation(Room.ktx)
+    kapt(Room.compiler)
+    androidTestImplementation(Room.testing)
+
     // Testing
     testImplementation(JUnit.junit4)
     androidTestImplementation(JUnit.ext)
