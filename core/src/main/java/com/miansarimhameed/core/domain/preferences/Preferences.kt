@@ -18,6 +18,9 @@ interface Preferences {
 
     fun loadUserInfo(): UserInfo
 
+    fun saveShouldShowOnboarding(shouldShow: Boolean)
+    fun loadShouldShowOnboarding(): Boolean
+
     companion object {
         const val KEY_AGE = "key_age"
         const val KEY_GENDER = "key_gender"
@@ -28,5 +31,6 @@ interface Preferences {
         const val KEY_CARB_RATIO = "key_carb_ratio"
         const val KEY_PROTEIN_RATIO = "key_protein_ratio"
         const val KEY_FAT_RATIO = "key_fat_ratio"
+        const val KEY_SHOULD_SHOW_ONBOARDING = "key_should_show_onboarding"
     }
 }
