@@ -70,6 +70,9 @@ dependencies {
     androidTestImplementation(Compose.uiTestJunit)
     debugImplementation(Compose.uiTestManifest)
 
+    // Coil
+    implementation(Coil.coilCompose)
+
     //Core
     implementation(Core.ktx)
 
